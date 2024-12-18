@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0px;
+        overflow: hidden;
+        padding: 0px;
+        background-color: black;
+        color: white;
+      }
+      #logo {
+        width: 300px;
+        height: auto;
+        margin: 40px;
+        animation: logo 2s ease-in-out infinite;
+      }
+
+      .cetner {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      @keyframes logo {
+        0% {
+          transform: translateY(0) translateX(-50%);
+        }
+        50% {
+          transform: translateY(-5px) translateX(-50%) scale(1.05);
+        }
+        100% {
+          transform: translateY(0) translateX(-50%);
+        }
+      }
+
+      .base{
+        width: 85vw;
+        height: 60vh;
+        border: 2px solid white;
+        border-radius: 5px;
+        top: 220px;
+      }
+
+      .card-base{
+        width: 90%;
+        height: 100%;
+        display: flex;
+      }
+
+      .card{
+        width: 100%;
+        height: 94%;
+        display: flex;
+        justify-content: center;flex-direction: column; align-items:center;
+        border: 2px solid white;
+        border-radius: 5px;
+        margin: 5px;
+        transition: all 0.5s ease;
+      }
+
+      .card:hover{
+        transform: scale(1.05) translateY(-5px);
+        border: 3px solid white;
+        background-color: #FFFFFF20
+      }
+
+      .card h2{
+        margin: 5px;
+      }
+
+      .card h4{
+        margin-top: 5px;
+      }
+
+      .tag-bar{
+        width: 90%;
+        min-height: 25px;
+        margin: 10px;
+        border: none;
+        display:flex;
+        gap: 10px;
+        justify-content:center;
+      }
+      .cont{
+        flex-shrink: 0;
+        width: 90%;
+        height: 20vh;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+
+      .cont img{
+        width: 100%;
+        height: auto;
+      }
+
+      .tag{flex-shrink: 0;width: 50px; min-height: 100%; border-radius: 6px; box-sizing: border-box; color: white; font-weight: bold;display:flex; justify-content:center;align-items:center;}
+      .t1{
+        /*background: linear-gradient(135deg, #FFD3AD,#FFA62A,#FF9537);*/
+        background:#FFB555;
+      }
+      .t2{
+        background:#FF6161;
+      }
+      .t3{
+        background:#6F6C6C;
+      }
+      .t4{
+        background:#3ECE92;
+      }
+      .t5{
+        background:#3E4FCE;
+      }
+
+      a{
+        width: 90%;
+        margin-bottom: 8px;
+      }
+      button{
+        width: 100%;
+        margin-bottom: 8px;
+        padding: 10px;
+        background:#FFFFFF00;
+        border:1px solid white;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        transition: all 0.5s ease;
+      }
+
+      button:hover{
+        transform: translateY(-5px);
+        background-color: #FFFFFF20;
+      }
+
+      button:active{
+        transform: translateY(5px);
+      }
+
+      .message {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 12px;
+        color: #FFFFFF50;
+      }
+
+      .name {
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+        height: 10px;
+        font-size: 18px;
+        color: #FFFFFF50;
+        font-weight: bold;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+    <img src="https://ifh.cc/g/d1s0rO.png" id="logo" class="cetner" />
+    <div class="message">This page is made by @ Web⨉Coding Club 2024</div>
+    <div class="name">@샛별중 코딩동아리 회장</div>
+    <div
+      class="cetner base"
+      style="display: flex; justify-content: center;flex-direction: column; align-items:center;"
+    >
+    <h2>🏆원하는 게임을 ▶ 플레이 하시고, 보상을 쟁취하세요!🏆</h2>
+    <div class="card-base">
+      <div class="card">
+        <h2>밸런스 강화</h2>
+        <h4>적절한 선택과 알맞는 행운🥳</h4>
+        <div class = 'cont'>
+        <img src='https://ifh.cc/g/hnaMkj.jpg'/>
+        </div>
+        <div class = 'tag-bar'>
+        <div class='tag t1'>#운빨</div>
+        <div class='tag t3'>#확률</div>
+        <div class='tag t2'>#선택</div>
+      </div>
+      <a href='https://sccl-topaz.vercel.app?p=https://select-game.vercel.app'><button>▶ 플레이</button></a>
+      </div>
+      <div class="card">
+      <h2>꽁꽁얼어붙은 한강위에</h2>
+      <h4>아슬아슬 피하기게임😱</h4>
+      <div class = 'cont'>
+      <img src='https://ifh.cc/g/vdhWcx.jpg'/>
+      </div>
+        <div class = 'tag-bar'>
+          <div class='tag t3'>#추천</div>
+          <div class='tag t4'>#실력</div>
+          <div class='tag t2'>#행운</div>
+          <div class='tag t5'>#노력</div>
+        </div>
+        <a href='https://sccl-topaz.vercel.app?p=https://but-ski.vercel.app'><button>▶ 플레이</button></a>
+      </div>
+      <div class="card">
+      <h2>눈덩이 어드벤쳐</h2>
+      <h4>수상한 눈사람의 대모험😏</h4>
+      <div class = 'cont'><img src='https://ifh.cc/g/bqGnwF.jpg'/></div>
+        <div class = 'tag-bar'>
+          <div class='tag t1'>#운빨</div>
+          <div class='tag t4'>#실력</div>
+          <div class='tag t3'>#노잼</div>
+          <div class='tag t5'>#노력</div>
+        </div>
+        <a href='https://sccl-topaz.vercel.app?p=https://snow-fight.vercel.app'><button>▶ 플레이</button></a>
+      </div>
+    </div>
+    <h5 style = 'color: #FFFFFF90;margin: 5px;'>(모든 게임의 최종 점수의 가치는 통일됩니다!)</h5>
+  </div>
+  </body>
+</html>
